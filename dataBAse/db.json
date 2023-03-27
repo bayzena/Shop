@@ -1,0 +1,264 @@
+{
+  "products": [
+    {
+      "id": 0,
+      "name": "Iphone 14",
+      "price": "299$",
+      "data": "23 jan 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-2-202303_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1676930656150"
+    },
+    {
+      "id": 1,
+      "name": "MacBook Air",
+      "price": "499$",
+      "data": "23 feb 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664472289661"
+    },
+    {
+      "id": 2,
+      "name": "Apple Watch Ultra",
+      "price": "779$",
+      "data": "23 march 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-alpine-ultra_VW_34FR_WF_CO?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660713659063%2C1660927566964%2C1660927563656"
+    },
+    {
+      "id": 4,
+      "name": "Iphone 13",
+      "price": "299$",
+      "data": "23 apr 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-model-unselect-gallery-2-202207_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1654893618197"
+    },
+    {
+      "id": 5,
+      "name": "Airpods 3rd Generation",
+      "price": "899$",
+      "data": "23 may 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861342000"
+    },
+    {
+      "id": 6,
+      "name": "Ipad Pro",
+      "price": "499$",
+      "data": "23 jun 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-model-select-gallery-2-202212?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667594167534"
+    },
+    {
+      "id": 7,
+      "name": "Iphone 12",
+      "price": "259$",
+      "data": "23 july 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-finish-select-202207-blue?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1662149977576"
+    },
+    {
+      "id": 8,
+      "name": "Apple Watch SE",
+      "price": "599$",
+      "data": "23 aug 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQXN3ref_VW_34FR+watch-40-alum-starlight-nc-se_VW_34FR_WF_CO?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1676420295567%2C1660759425078"
+    },
+    {
+      "id": 9,
+      "name": "Mac mini",
+      "price": "699$",
+      "data": "23 sept 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-config-20220606?wid=410&hei=249&fmt=jpeg&qlt=95&.v=1654122880566"
+    },
+    {
+      "id": 10,
+      "name": "Airpods 2nd Generation",
+      "price": "1199$",
+      "data": "23 oct 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MV7N2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1551489688005"
+    },
+    {
+      "id": 11,
+      "name": "Ipad Mini",
+      "price": "1299$",
+      "data": "23 nov 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-mini-finish-select-gallery-202211-purple?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1670950640877"
+    },
+    {
+      "id": 12,
+      "name": "Iphone SE",
+      "price": "1399$",
+      "data": "23 dec 2023y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-finish-select-202207-midnight?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1655316263296"
+    },
+    {
+      "id": 13,
+      "name": "Apple Watch Hermes",
+      "price": "299$",
+      "data": "23 jan 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MR2L3_VW_34FR+watch-41-stainless-silver-cell-hermes8s_VW_34FR_WF_CO+watch-face-41-hermes8s-complex-blanc_VW_34FR_WF_CO?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1676445855345%2C1663623201568%2C1660719010326"
+    },
+    {
+      "id": 14,
+      "name": "Mac Studio",
+      "price": "329$",
+      "data": "23 feb 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-studio-hero-202203?wid=410&hei=436&fmt=jpeg&qlt=95&.v=1645665541274"
+    },
+    {
+      "id": 15,
+      "name": "Iphone 14 Pro",
+      "price": "889$",
+      "data": "23 march 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1660753617560"
+    },
+    {
+      "id": 16,
+      "name": "iMac",
+      "price": "1229$",
+      "data": "23 apr 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-blue-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479508000"
+    },
+    {
+      "id": 17,
+      "name": "Airpods Pro 2nd Generation",
+      "price": "1199$",
+      "data": "23 may 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361"
+    },
+    {
+      "id": 18,
+      "name": "Airpods Max",
+      "price": "699$",
+      "data": "23 jun 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/airpods-max-select-skyblue-202011?wid=470&hei=556&fmt=png-alpha&.v=1604022365000"
+    },
+    {
+      "id": 19,
+      "name": "Ipad",
+      "price": "499$",
+      "data": "23 july 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-10th-gen-finish-select-202212-silver?wid=2560&hei=1440&fmt=p-jpg&qlt=95&.v=1667592672884"
+    },
+    {
+      "id": 20,
+      "name": "Displays",
+      "price": "4499$",
+      "data": "23 aug 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/studio-display-gallery-1-202203?wid=320&hei=264&fmt=p-jpg&qlt=95&.v=1675709041796"
+    },
+    {
+      "id": 21,
+      "name": "Apple Watch Nike",
+      "price": "3999$",
+      "data": "23 sept 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MR2P3ref_VW_34FR+watch-41-stainless-silver-cell-8s_VW_34FR_WF_CO?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1676836802403%2C1661890809922"
+    },
+    {
+      "id": 22,
+      "name": "Iphone 14 Pro Max",
+      "price": "3299$",
+      "data": "23 oct 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-spaceblack?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1663703841897"
+    },
+    {
+      "id": 23,
+      "name": "Iphone 14 Plus",
+      "price": "2299$",
+      "data": "23 nov 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch_AV1?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1671474798353"
+    },
+    {
+      "id": 24,
+      "name": "Studio Display",
+      "price": "2299$",
+      "data": "23 dec 2022y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/studio-display-gallery-2-202203?wid=320&hei=264&fmt=p-jpg&qlt=95&.v=1675709041798"
+    },
+    {
+      "id": 25,
+      "name": "Pro Display XDR",
+      "price": "3499$",
+      "data": "23 jan 2021y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/pro-display-hero?wid=410&hei=237&fmt=jpeg&qlt=95&.v=1572384750703"
+    },
+    {
+      "id": 26,
+      "name": "Iphone 14",
+      "price": "299$",
+      "data": "23 feb 2021y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-7inch_AV2_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1671474799385"
+    },
+    {
+      "id": 27,
+      "name": "AirPods (3rd generation) with Lightning Charging Case",
+      "price": "599$",
+      "data": "23 march 2021y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1632861338000"
+    },
+    {
+      "id": 28,
+      "name": "Apple Watch Series 8",
+      "price": "799$",
+      "data": "23 apr 2021y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MPL73_VW_34FR+watch-41-alum-starlight-nc-8s_VW_34FR_WF_CO?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660781170889%2C1661978672727"
+    },
+    {
+      "id": 29,
+      "name": "MacBook Pro 14",
+      "price": "5599$",
+      "data": "23 may 2021y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=2000&hei=1211&fmt=jpeg&qlt=95&.v=1671304673229"
+    },
+    {
+      "id": 30,
+      "name": "Imac 24",
+      "price": "599$",
+      "data": "23 jun 2021y.",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/imac-24-pink-cto-hero-202104?wid=627&hei=566&fmt=jpeg&qlt=95&.v=1617479511000"
+    },
+    {
+      "name": "iphone",
+      "id": 31
+    },
+    {
+      "name": "mac",
+      "id": 32
+    },
+    {
+      "name": "iphone test",
+      "price": "323249$",
+      "image": "undefined",
+      "id": 33
+    },
+    {
+      "name": "test",
+      "price": "e276723",
+      "image": "C:\\fakepath\\Screenshot from 2023-03-25 18-33-48.png",
+      "id": 34
+    },
+    {
+      "name": "sjabb",
+      "price": "ajxnasj",
+      "image": "C:\\fakepath\\Screenshot from 2023-02-20 03-38-06.png",
+      "id": 35
+    },
+    {
+      "name": "sjabb",
+      "price": "ajxnasj",
+      "image": "C:\\fakepath\\Screenshot from 2023-02-20 03-38-06.png",
+      "id": 36
+    },
+    {
+      "name": "swxb as",
+      "price": "saxdds",
+      "image": "C:\\fakepath\\Screenshot from 2023-03-11 00-03-13.png",
+      "id": 37
+    },
+    {
+      "name": "kkkkkkk",
+      "price": "33333333",
+      "image": "C:\\fakepath\\Screenshot from 2023-03-25 20-14-24.png",
+      "id": 38
+    },
+    {
+      "name": "ddddd",
+      "price": "4444444444",
+      "image": "C:\\fakepath\\Screenshot from 2023-03-25 18-33-48.png",
+      "id": 39
+    }
+  ]
+}
