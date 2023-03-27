@@ -1,0 +1,494 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.obertka {
+    padding-right: 13rem;
+    padding-left: 13rem;
+}
+
+.display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*---header--- */
+#header {
+    height: 27rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-image: url("https://www.apple.com/v/home/av/images/heroes/iphone-14/hero_iphone14_preorder__c4g2wjzuugqe_medium.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* ----------texts----- */
+.text {
+    font-size: 6.2rem;
+}
+
+.specialFont {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#appleText {
+    font-weight: bold;
+}
+
+#newProd {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.imgFavoriteTrash {
+    cursor: pointer;
+}
+
+
+/*--main--*/
+#main {
+    margin-top: 5rem;
+}
+
+
+/*----navbar---*/
+/*   background-color: #e26538;*/
+#navBar {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    height: 5rem;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 9rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   .btn::before,
+   .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   .btn::before {
+    left: -10px;
+    background: #032a48;
+   }
+   
+   .btn::after {
+    right: -10px;
+    background: #285e8a;
+   }
+   
+    .btn:hover::before,
+    .btn:hover::after {
+    width: 58%;
+   }
+   
+   .btn:hover a {
+    color: #ffffff;
+    transition: 0.3s;
+   }
+   
+   .btn a {
+    color: #03043e;
+    font-size: 14px;
+    transition: all 0.3s ease-in;
+   }
+
+
+a {
+    text-decoration: none;
+}
+
+#orangeDiv {
+    width: 100%;
+    height: 4rem;
+    background-color: #ffd63e;
+    margin-top: 6rem;
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+#isearchInput {
+    width: 60rem;
+    height: 2.5rem;
+    border-radius: 20px;
+    border: solid 0.1px #a1b6cb;
+    box-sizing: border-box;
+    padding-left: 1rem;
+}
+
+
+.imgFavoriteTrash {
+    width: 2rem;
+    height: 2rem;
+}
+
+.searchDiv div {
+    gap: 1rem;
+}
+
+#filter {
+    width: 2rem;
+    height: 2rem;
+} 
+
+.filter {
+    width: 2rem;
+    height: 2rem;
+}
+
+#sort img {
+    width: 1rem;
+    height: 1rem;
+} 
+
+#sort {
+    width: 1rem;
+    height: 1rem;
+}
+
+.sortBy {
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    gap: 2rem;
+}
+
+select {
+    border: none;
+    border-radius: 4px;
+    width: 6rem;
+}
+
+/* .gapIconsort {
+    gap: 1rem;
+} */
+
+
+/*---product---*/
+.products {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    gap: 10px;
+    border: solid 0.1px white;
+    box-sizing: border-box;
+    padding: 2rem;
+    box-shadow: 0px 0px 4px 3px #2222;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.hide {
+    display: none
+}
+
+#prodImage {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+
+span img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+.price {
+    color: #03043e;
+}
+
+.data {
+    color: #2222228c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nameProd {
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+
+/*create prod*/
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+.obertkaForDialog {
+    display: none;
+}
+
+.dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    box-sizing: border-box;
+    padding: 9rem;
+    border-radius: 20px;
+    border: solid 0.1px #a1b6cb;
+    box-shadow: 0px 0px 7px 3px rgb(0 0 255 / 20%);
+    z-index: 1;
+}
+
+
+
+.textCreateProd {
+    background-color: #f3ec78;
+    background-image: conic-gradient(#265fbac2, #141325);
+    -webkit-text-fill-color: transparent;
+    background-repeat: repeat;
+    -webkit-background-clip: text
+}
+
+#image {
+    max-width: 400px;
+    display: none
+  }
+
+#nameProd {
+    width: 300px;
+    height: 2rem;
+    border-radius: 20px;
+    border: solid 0.1px #a1b6cb;
+}
+
+#price {
+    width: 300px;
+    height: 2rem;
+    border-radius: 20px;
+    border: solid 0.1px #a1b6cb;
+}
+
+dialog {
+    border: solid 1px black;
+}
+
+
+#image {
+    width: 400px;
+    height: 400px;
+}
+
+
+.iconDiv img {
+    position: relative;
+}
+/*adaptive none*/
+.obertkaAllAdaptive {
+    display: none;
+}
+.obertkaAdaptive {
+    display: none;
+}
+.contentStyle {
+    display: none;
+}
+.productsObertkaAdaptive {
+    display: none;
+}
+
+/*ADAPTIVE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+@media (max-width: 420px) {
+    #header {
+        display: none;
+    }
+    .obertka {
+        display: none;
+    }
+    #orangeDiv {
+        display: none;
+    }
+
+    .obertkaAllAdaptive {
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 25px;
+    }
+
+
+    .obertkaAdaptive {
+        padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .paddingThirdContainer {
+        padding-top: 3.2rem;
+    }
+
+    #appleIcon {
+        width: 24px;
+        height: 24px;
+    }
+    .appleIconDiv {
+        width: 24px;
+        height: 24px;
+    }
+    #searchDiv {
+        width: 320px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 6px;
+        border: solid 0.5px lightgrey;
+        border-radius: 1rem;
+        box-sizing: border-box;
+        padding: 4px;
+    }
+    #searchIconDiv {
+        width: 20px;
+        height: 20px;
+    }
+    .search {
+        width: 20px;
+        height: 20px;
+        opacity: 20%
+    }
+    #inputSearch {
+        border: none;
+    }
+
+    #newsTextAdaptive {
+        color: #ffd63e;
+    }
+
+    .contentStyle {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contentStyle h4 {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .contentStyle h2 {
+        font-weight: 500;
+    }
+
+    .contentStyle a {
+        color: blue;
+        padding-left: 200px;
+    }
+
+    .productsAdaptive {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        overflow-x: scroll
+    }
+    .productAdaptive {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        justify-content: center;
+        align-items: center;
+        border: solid 0.1px white;
+        box-sizing: border-box;
+        padding: 1rem;
+        box-shadow: 0px 4px 4px 0px #2222;
+        border-radius: 1rem;
+    }
+
+    .productsObertkaAdaptive {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
+
+    .productsObertkaAdaptive div {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    #prodImage {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .nameProd {
+        font-size: 10px;
+    }
+
+    .price {
+        font-size: 14px;
+        color: #29a0ff;
+    }
+
+    .icardImg {
+        width: 19rem;
+        height: 14rem;
+    }
+
+
+    .special {
+        justify-content: center;
+        align-items: center;
+    }
+}

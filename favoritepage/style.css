@@ -1,0 +1,16 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.obertka {
+    padding-right: 13rem;
+    padding-left: 13rem;
+}
+
+.text {
+    display: flex;
+    padding-top: 2rem;
+}
