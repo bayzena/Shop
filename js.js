@@ -20,7 +20,7 @@ dialog.appendChild(CreateProdText);
 
 const inputForImg = document.createElement("input");
 inputForImg.id = "file";
-inputForImg.setAttribute("type", "file");
+// inputForImg.setAttribute("type", "file");
 dialog.appendChild(inputForImg);
 
 const imgProd = document.createElement("img");
@@ -29,10 +29,10 @@ imgProd.id = "image";
 dialog.appendChild(imgProd);
 
 ///////////////////////////////////////////////// add img for inputImg in change product
-document.querySelector("#file").addEventListener("change", function () {
-	imgProd.src = URL.createObjectURL(document.querySelector("#file").files[0]);
-	imgProd.style.display = "flex";
-});
+// document.querySelector("#file").addEventListener("change", function () {
+// 	imgProd.src = URL.createObjectURL(document.querySelector("#file").files[0]);
+// 	imgProd.style.display = "flex";
+// });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////!!!!!!!!!!1
 
 const inputForNameOfProd = document.createElement("input");
@@ -53,6 +53,44 @@ finish.id = "finishBtn";
 finish.classList.add("btn");
 dialog.appendChild(finish);
 //////////////////////////////////////////////////////////////////  DIALOG MODAL END
+
+const container = document.createElement('div')
+container.classList.add('container')
+document.body.appendChild(container)
+
+const navMain = document.createElement('nav')
+navMain.classList.add('main')
+container.appendChild(navMain)
+
+const divAppleIcon = document.createElement('div')
+divAppleIcon.classList.add('apple-icon')
+navMain.appendChild(divAppleIcon)
+
+const imgApple = document.createElement('img')
+imgApple.setAttribute('src', 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apple-logo.png/640px-Apple-logo.png')
+imgApple.classList.add('apple-icon')
+divAppleIcon.appendChild(imgApple)
+
+navMain.innerHTML = ' <a href="https://www.apple.com/store">Store</a><a href="https://www.apple.com/mac/">Mac</a><a href="https://www.apple.com/ipad/">Ipad</a><a href="">Iphone</a><a href="">Watch</a><a href="">Airpods</a><a href="">TV&Home</a><a href="">Entertaiment</a><a href="">Accessories</a><a href="">Support</a>'
+
+// const aStore = document.createElement('a')
+// aStore.setAttribute('href', 'https://www.apple.com/store')
+// aStore.classList.add('aMain')
+// navMain.appendChild(aStore)
+
+// const aMac = document.createElement('a')
+// aMac.setAttribute('href', 'https://www.apple.com/mac/')
+// aMac.classList.add('aMain')
+// navMain.appendChild(aMac)
+
+// const aIpad = document.createElement('a')
+// aIpad.classList.add('aMain')
+// aIpad.setAttribute('href', 'https://www.apple.com/ipad/')
+// navMain.appendChild(aIpad)
+
+// const aMains = document.createElement
+
+
 
 // DOM-header/////////////////////////////////////////////////////////////////////////////////////////////////////////
 const obertkaDiv = document.createElement("div");
@@ -97,13 +135,11 @@ btnPlay.addEventListener("click", () => {
 	if (videoForVideo.paused) {
 		videoForVideo.play();
 		headerImgDiv.style.zIndex = "-1";
-		videoForVideo.style.display = "flex";
-		learnMoreA.style.display = "none";
+		divForVideo.style.display = "flex";
 	} else {
 		videoForVideo.pause();
 		headerImgDiv.style.zIndex = "1";
-		videoForVideo.style.display = "none";
-		learnMoreA.style.display = "flex";
+		divForVideo.style.display = "none";
 	}
 });
 
@@ -113,6 +149,7 @@ imgPlay.setAttribute(
 	"https://cdn-icons-png.flaticon.com/512/5690/5690573.png",
 );
 btnPlay.appendChild(imgPlay);
+
 
 const divForVideo = document.createElement("div");
 divForVideo.classList.add("inherit");
@@ -130,14 +167,7 @@ sourceVideo.setAttribute(
 );
 sourceVideo.setAttribute("type", "video/mp4");
 videoForVideo.appendChild(sourceVideo);
-//source !
 
-const learnMoreA = document.createElement("a");
-learnMoreA.setAttribute("target", "_blank");
-learnMoreA.innerHTML = "Learn More";
-learnMoreA.setAttribute("href", "https://www.apple.com/iphone-14/");
-learnMoreA.classList.add("learnMoreText");
-headerDiv.appendChild(learnMoreA);
 
 // header---end
 
@@ -165,7 +195,7 @@ searchInput.setAttribute("type", "search");
 searchInput.id = "isearchInput";
 searchForm.appendChild(searchInput);
 
-///////////////////////search
+///////////////////////search//////////////////////////////////////////////////////////////////////////////
 
 document.querySelector("#isearchInput").addEventListener("input", function () {
 	let val = this.value.trim().toLowerCase();
@@ -185,34 +215,33 @@ document.querySelector("#isearchInput").addEventListener("input", function () {
 		});
 	}
 });
-//////////////////////end
+//////////////////////search end////////////////////////////////////////////////////////////////////////////////////////////
 
 const divForFavAndTrash = document.createElement("div");
 divForFavAndTrash.classList.add("display");
 searchForm.appendChild(divForFavAndTrash);
 
-const divForFavorite = document.createElement("div");
-divForFavAndTrash.appendChild(divForFavorite);
+const aHregForFav = document.createElement("a");
+// aHregForFav.innerHTML = "favorite";
+aHregForFav.setAttribute(
+	"href",
+	"http://127.0.0.1:5501/Shop/favoritepage/index.html",
+);
+aHregForFav.setAttribute("target", "_blank");
+divForFavAndTrash.appendChild(aHregForFav);
 
 const imgFavorite = document.createElement("img");
 imgFavorite.classList.add("imgFavoriteTrash");
 imgFavorite.setAttribute(
 	"src",
-	"https://img.icons8.com/windows/256/hearts.png",
+	"https://img.icons8.com/ios-filled/256/like--v1.png",
 );
-divForFavorite.appendChild(imgFavorite);
+aHregForFav.appendChild(imgFavorite);
 
-const aHregForFav = document.createElement("a");
-aHregForFav.innerHTML = "favorite";
-aHregForFav.setAttribute(
-	"href",
-	"http://127.0.0.1:5500/Shop/favoritepage/index.html",
-);
-aHregForFav.setAttribute("target", "_blank");
-divForFavorite.appendChild(aHregForFav);
-
-const divForTrash = document.createElement("div");
-divForFavAndTrash.appendChild(divForTrash);
+const aTrash = document.createElement("a");
+aTrash.setAttribute("href", "http://127.0.0.1:5501/Shop/trashPage/index.html");
+aTrash.setAttribute("target", "_blank");
+divForFavAndTrash.appendChild(aTrash);
 
 const imgTrash = document.createElement("img");
 imgTrash.classList.add("imgFavoriteTrash");
@@ -220,7 +249,11 @@ imgTrash.setAttribute(
 	"src",
 	"https://img.icons8.com/material-sharp/256/full-trash.png",
 );
-divForTrash.append(imgTrash);
+aTrash.append(imgTrash);
+
+//////////////////////////////orange div end//////////////////////////////////////////////////////////////////////////////
+
+////////////////////////main div start//////////////////////////////////////////////////////////////////////////////
 
 const main = document.createElement("main");
 main.id = "main";
@@ -229,6 +262,12 @@ obertkaDivForMAin.appendChild(main);
 const divForNewProdAndCreateProd = document.createElement("div");
 divForNewProdAndCreateProd.classList.add("display");
 main.appendChild(divForNewProdAndCreateProd);
+
+//products
+const productsDiv = document.createElement("div");
+productsDiv.classList.add("products");
+main.appendChild(productsDiv);
+//////////////////////////////////////////////////////////////////////////////
 
 const newProductsDiv = document.createElement("div");
 newProductsDiv.id = "newProd";
@@ -291,11 +330,6 @@ const btnPriceUp = document.createElement("button");
 btnPriceUp.classList.add("btn");
 btnPriceUp.innerHTML = "price increase";
 navBarBtns.appendChild(btnPriceUp);
-
-//products
-const productsDiv = document.createElement("div");
-productsDiv.classList.add("products");
-main.appendChild(productsDiv);
 
 btnDataUp.addEventListener("click", () => {
 	productsDiv.innerHTML = "";
@@ -414,6 +448,7 @@ window.addEventListener("scroll", () => {
 ///////////////////end pagination
 
 /////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!CHANGE INFORMATION IN PRODUCT
+
 ///////////////////////put
 async function changeData(url = "", data = {}) {
 	try {
@@ -427,28 +462,27 @@ async function changeData(url = "", data = {}) {
 
 		const json = await res.json();
 	} catch (error) {
-		console.error(error)
+		console.error(error);
 	}
 }
+
 ////////////////end put
 
 /////////////////end
 
 ///fav
-
-async function favPut() {
+async function favPut(id, key = {}) {
 	try {
-		const data = await fetch('http://localhost:3000/products?key=true', {
-			method: 'PUT',
+		const dataJs = await fetch(`http://localhost:3000/products/${id}`, {
+			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
 			},
-			body: JSON.stringify(data),
-		})
-		const dbJson = await res.json
-	}
-	catch (error) {
-		console.error(error)
+			body: JSON.stringify(key),
+		});
+		const dbJson = await dataJs.json();
+	} catch (error) {
+		console.error(error);
 	}
 }
 
@@ -514,6 +548,7 @@ function addProduct(name, price, image, data, btnId) {
 
 	btnChange.addEventListener("click", () => {
 		changeCard({ image, name, price, btnId });
+		obertkaForDialogWindow.style.display = "none";
 	});
 
 	const btnFav = document.createElement("button");
@@ -530,7 +565,15 @@ function addProduct(name, price, image, data, btnId) {
 	btnFav.appendChild(iconFavorite);
 
 	btnFav.addEventListener("click", () => {
-		console.log("test");
+		doTrue = true;
+		console.log(btnId);
+		favPut(btnId, {
+			key: doTrue,
+			name: name,
+			price: price,
+			image: image,
+			data: data,
+		});
 		getElemFavImg = document.querySelector("#fav");
 		getElemFavImg.setAttribute(
 			"src",
@@ -544,7 +587,7 @@ function addProduct(name, price, image, data, btnId) {
 	});
 }
 
-function changeCard({ src, name, price, id }) {
+function changeCard({ image, name, price, btnId }) {
 	const obertkaForDialogWindowOfProduct = document.createElement("div");
 	obertkaForDialogWindowOfProduct.classList.add("obertkaForDialogChange");
 	document.body.appendChild(obertkaForDialogWindowOfProduct);
@@ -553,6 +596,7 @@ function changeCard({ src, name, price, id }) {
 
 	const dialogWindowProduct = document.createElement("div");
 	dialogWindowProduct.classList.add("dialog");
+	dialogWindowProduct.id = "left";
 	obertkaForDialogWindowOfProduct.appendChild(dialogWindowProduct);
 
 	const divForChange = document.createElement("div");
@@ -574,7 +618,7 @@ function changeCard({ src, name, price, id }) {
 
 	const imgChange = document.createElement("img");
 	imgChange.classList.add("imgChange");
-	imgChange.setAttribute("src", `${src}`);
+	imgChange.setAttribute("src", `${image}`);
 	divForImgChange.appendChild(imgChange);
 
 	const divInputs = document.createElement("div");
@@ -601,14 +645,15 @@ function changeCard({ src, name, price, id }) {
 	dialogWindowProduct.appendChild(change);
 
 	change.addEventListener("click", () => {
-		changeData(`http://localhost:3000/products/${id}`, {
+		changeData(`http://localhost:3000/products/${btnId}`, {
 			name: `${inputName.value}`,
 			price: `${inputPrice.value}`,
-			image: `${src}`,
+			image: `${image}`,
 		});
 		obertkaForDialogWindowOfProduct.style.display = "none";
 	});
 }
+
 /////////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!DELETE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 async function deleteData(id) {
 	try {

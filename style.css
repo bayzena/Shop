@@ -5,6 +5,7 @@
 }
 
 .obertka {
+    margin-top: 1rem;
     padding-right: 4rem;
     padding-left: 4rem;
     background-color: black;
@@ -23,6 +24,24 @@
 img:hover {
     transition: transform .5s;
     transform: scale(1.1);
+}
+/*main*/
+.container {
+    margin-top: 2rem;
+    padding-left: 25rem;
+    padding-right: 25rem;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.apple-icon {
+    width: 20px;
+    height: 20px;
 }
 
 /*---header--- */
@@ -74,6 +93,7 @@ img:hover {
 }
 
 .inherit {
+    display: none;
     width: inherit;
 }
 
@@ -93,12 +113,12 @@ img:hover {
 
 /* ----------texts----- */
 .text {
-    font-size: 6.2rem;
+    font-size: 4.2rem;
 }
 
 .specialFont {
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
@@ -122,10 +142,6 @@ h2:hover {
 
 h3:hover {
     color: blue;
-}
-
-.learnMoreText {
-    z-index: 2;
 }
 
 /*--main--*/
@@ -212,13 +228,15 @@ h3:hover {
 
 
 a {
+    font-size: 14px;
     text-decoration: none;
+    color: rgb(116, 115, 115);
 }
 
 #orangeDiv {
     width: 100%;
     height: 4rem;
-    background-color: #0083f6;
+    background-color: rgb(218 214 214);
 }
 
 .searchDiv {
@@ -240,8 +258,8 @@ a {
 
 
 .imgFavoriteTrash {
-    width: 2rem;
-    height: 2rem;
+    width: 24px;
+    height: 24px;
 }
 
 .searchDiv div {
@@ -399,13 +417,16 @@ span img {
     border-radius: 20px;
     border: solid 0.1px #a1b6cb;
     box-shadow: 0px 0px 7px 3px rgb(0 0 255 / 20%);
+    position: fixed;
     z-index: 2;
-    position: absolute;
     top: 20%;
-    left: 30%;
+    left: 40%;
     background: linear-gradient(45deg, #f5f5f5, #60c3f0);
 }
 
+#left {
+    left: 30%;
+}
 .finishBtn {
     color: white;
 }
@@ -492,6 +513,13 @@ dialog {
     border-radius: 2rem;
 }
 
+.imgChange {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 /*END CHANGE*/
 
 /*footer*/
@@ -531,6 +559,9 @@ footer a {
         display: none;
     }
     .obertkaContent {
+        display: none;
+    }
+    .container {
         display: none;
     }
 

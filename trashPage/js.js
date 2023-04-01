@@ -3,7 +3,7 @@ obertkaDiv.classList.add("obertka");
 document.body.appendChild(obertkaDiv);
 
 const yourFavoriteProd = document.createElement("h1");
-yourFavoriteProd.innerHTML = "Your Favorite Products";
+yourFavoriteProd.innerHTML = "Your Trash";
 yourFavoriteProd.classList.add("text");
 obertkaDiv.appendChild(yourFavoriteProd);
 
@@ -20,20 +20,6 @@ obertkaDivForMAin.appendChild(main);
 const productsDiv = document.createElement("div");
 productsDiv.classList.add("products");
 main.appendChild(productsDiv);
-
-
-async function favCards() {
-    try {
-        const data = await fetch('http://localhost:3000/products?key=true')
-        const dataJson = await data.json()
-
-        products(dataJson)
-    } catch (error) {
-        console.error(error)
-    }
-}
-
-favCards()
 
 function products(product) {
 	for (let i = 0; i < product.length; i++) {
@@ -109,17 +95,6 @@ function create(name, price, image, data, btnId) {
 		"https://img.icons8.com/material-sharp/256/full-trash.png",
 	);
 	btnTrash.append(iconTrash);
-
-    btnTrash.addEventListener('click', () => {
-        doFalse = false
-        deleteFromFav(btnId, {
-            key: doFalse,
-            name: name,
-            price: price,
-            data: data,
-            image: image
-        })
-    })
 
 	const btnFav = document.createElement("button");
 	btnFav.classList.add("btnCircle");
